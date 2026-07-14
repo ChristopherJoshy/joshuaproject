@@ -103,7 +103,7 @@
         const avatarImg = document.createElement('img');
         avatarImg.src = sender === 'user' 
             ? 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=100' // General user avatar
-            : 'assets/images/Chat-window.svg';
+            : '/assets/images/Chat-window.svg';
         avatarImg.alt = sender === 'user' ? 'User' : 'Orito';
         avatarCol.appendChild(avatarImg);
         
@@ -240,7 +240,7 @@
         typingRow.className = 'orito-msg-row orito typing-indicator-row';
         typingRow.innerHTML = `
             <div class="orito-msg-avatar">
-                <img src="assets/images/Chat-window.svg" alt="Orito">
+                <img src="/assets/images/Chat-window.svg" alt="Orito">
             </div>
             <div class="orito-bubble">
                 <div class="typing-indicator">
