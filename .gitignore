@@ -1,21 +1,7 @@
 # ============================================================
-#  .gitignore — Only the web/ app is tracked in Git
+#  .gitignore — Explicitly ignore non-web files
+#  Web app files are at repo root and tracked by default
 # ============================================================
-
-# Ignore everything by default
-/*
-
-# ----- ALLOW ------------------------------------------------
-# Git meta files
-!.gitignore
-!README.md
-!vercel.json
-
-# The web app (the only thing we deploy)
-!/web/
-!/web/**
-
-# ----- EXPLICIT IGNORES (already caught by /* but documented) -----
 
 # Python scripts & bytecode
 scripts/
@@ -27,19 +13,22 @@ __pycache__/
 # Raw data extraction output
 extracted_raw_data/
 extracted_products.json
-products_db.json
+
+# Old dist folder (web/ is now at root)
+dist/
+web/
 
 # PDF source catalogues
 *.pdf
 
-# Design / scratch images at root level
+# Design / scratch images (not part of web app)
 cover_corel.png
 cover_new1.png
 desgn-idea.jpg
 Chat-Icon.svg
 Chat-window.svg
 
-# Python virtual environments (if ever added)
+# Python virtual environments
 .venv/
 venv/
 env/
