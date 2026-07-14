@@ -370,9 +370,19 @@ Please share stock availability and wholesale B2B pricing details. Thanks!`;
     
     // Show Modal
     DOM.productModal.classList.add('open');
-    DOM.modalOverlay.classList.add('open');
-    document.body.style.overflow = 'hidden'; // Disable page scrolling
+    DOM.productModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
+
+// Expose modal trigger globally for Orito Chat
+window.openProductModalById = function(id) {
+    if (state && state.products) {
+        const product = state.products.find(p => p.id === id);
+        if (product) {
+            openProductModal(product);
+        }
+    }
+};
 
 // Close Product Detail Modal
 function closeProductModal() {
