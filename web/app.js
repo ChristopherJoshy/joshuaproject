@@ -54,7 +54,7 @@ const DOM = {
 // Fetch and Initialize Data
 async function initApp() {
     try {
-        const response = await fetch('products_db.json');
+        const response = await fetch('/products_db.json');
         if (!response.ok) {
             throw new Error('Failed to load product database');
         }
