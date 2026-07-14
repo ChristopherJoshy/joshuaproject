@@ -9,6 +9,7 @@
 # Git meta files
 !.gitignore
 !README.md
+!vercel.json
 
 # The web app (the only thing we deploy)
 !/web/
