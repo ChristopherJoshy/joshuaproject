@@ -247,7 +247,7 @@ function renderProducts() {
         html += `
             <div class="product-card" data-id="${p.id}">
                 <div class="card-img-container">
-                    <img src="assets/images/${p.image_file}" alt="${p.name}" loading="lazy">
+                    <img src="/assets/images/${p.image_file}" alt="${p.name}" loading="lazy">
                 </div>
                 <div class="card-info">
                     <span class="card-cat-tag">${p.category}</span>
@@ -329,7 +329,7 @@ function openProductModal(p) {
         oritoClosedBox.style.display = 'flex';
     }
 
-    DOM.modalProductImage.src = `assets/images/${p.image_file}`;
+    DOM.modalProductImage.src = `/assets/images/${p.image_file}`;
     DOM.modalProductImage.alt = p.name;
     DOM.modalProductCategory.textContent = p.category;
     DOM.modalProductName.textContent = p.name;
