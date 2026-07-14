@@ -1,0 +1,55 @@
+# ============================================================
+#  .gitignore — Only the web/ app is tracked in Git
+# ============================================================
+
+# Ignore everything by default
+/*
+
+# ----- ALLOW ------------------------------------------------
+# Git meta files
+!.gitignore
+!README.md
+
+# The web app (the only thing we deploy)
+!/web/
+!/web/**
+
+# ----- EXPLICIT IGNORES (already caught by /* but documented) -----
+
+# Python scripts & bytecode
+scripts/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Raw data extraction output
+extracted_raw_data/
+extracted_products.json
+products_db.json
+
+# PDF source catalogues
+*.pdf
+
+# Design / scratch images at root level
+cover_corel.png
+cover_new1.png
+desgn-idea.jpg
+Chat-Icon.svg
+Chat-window.svg
+
+# Python virtual environments (if ever added)
+.venv/
+venv/
+env/
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
