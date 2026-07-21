@@ -2256,6 +2256,11 @@ img {
 @media (max-width: 600px) {
     .header-container { padding: 0 16px; }
     .hero-container { padding: 60px 16px; }
+    .hero-section { min-height: 0; padding-bottom: 40px; }
+    .hero-layer--art { top: auto; bottom: 0; height: 70%; opacity: 0.6; filter: blur(2px); }
+    .hero-title { font-size: clamp(2rem, 9vw, 2.8rem); max-width: 100%; }
+    .hero-subtitle { font-size: 0.92rem; max-width: 100%; }
+    .hero-eyebrow { font-size: 1.1rem; }
     .features-container { grid-template-columns: 1fr; gap: 16px; }
     .catalog-header { padding: 0 16px 20px; }
     .catalog-nav-horizontal-wrapper { padding: 0 16px 24px; }
