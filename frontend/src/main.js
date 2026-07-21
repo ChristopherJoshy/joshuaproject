@@ -3,6 +3,7 @@ import './style.css';
 import { initCatalog } from './catalog.js';
 import { initNav } from './nav.js';
 import { initModal } from './modal.js';
+import { initHeroSceneAnimations } from './heroAnimations.js';
 
 function initScrollProgress() {
     const bar = document.getElementById('progress-bar');
@@ -180,4 +181,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initNav();
     initModal();
     initCatalog();
+    initHeroSceneAnimations();
 });
